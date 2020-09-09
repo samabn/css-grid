@@ -187,3 +187,67 @@ body {
 }
 
 /*** FIN FOOTER ***/
+
+/*** MEDIAS QUERY ***/
+
+@media screen and (max-width: 800px) {
+    .header {
+        height: auto;
+    }
+
+    .grid-header, .grid-services, .grid-about-us, .grid-mission, .grid-footer {
+        grid-gap: 30px;
+    }
+
+    .img-hero, .texto-hero {
+        grid-column: 1/-1;
+    }
+
+    .img-hero {
+        text-align: center;
+    }
+
+    /*** SERVICES ***/
+
+    .services {
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .item {
+        height: auto;
+        width: 60%;
+        margin: 40px 0;
+        padding: 40px;
+    }
+
+    /*** MISSION ***/
+
+    .textos-mission {
+        grid-column: 1/-1;
+        align-self: center;
+    }
+
+    .img-mission {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 400px) {
+    
+    .grid-header, .grid-services, .grid-about-us, .grid-mission, .grid-footer {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    
+    .img {
+        max-width: 170px;;
+    }
+
+    .footer-item {
+        grid-column: 1/-1;
+    }
+
+}
